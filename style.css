@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.form-element {
+    display: inline-block;
+}
+
+#input-form {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.output-content {
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.output-content > div {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+#results {
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+
+.table-wrapper {
+    overflow-y: scroll;
+}

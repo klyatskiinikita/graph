@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css">
+    <title>math</title>
+</head>
+<body>
+    <form id="input-form">
+        <div class="form-element">
+            <label for="initial-value">X initial value =</label>
+            <input type="number" id="initial-value" name="initial-value" value="-2">
+        </div>
+        <div class="form-element">
+            <label for="final-value">X final value =</label>
+            <input type="number" id="final-value" name="final-value" value="2">
+        </div>
+        <div class="form-element">
+            <label for="step">Step =</label>
+            <input type="number" id="step" name="step" value=".5">
+        </div>
+        <div class="form-element">
+            <label for="type">choose cycle type:</label><br />
+            <input type="radio" name="type" value="0">while</input><br />
+            <input type="radio" name="type" value="1">do-while</input><br />
+            <input type="radio" name="type" value="2" checked>for</input><br />
+        </div>
+        <input type="button" value="calculate" onclick="calculate()">
+    </form>
+    <div class="output-content">
+        <div>
+            <canvas id="сanvas"></canvas>
+        </div>
+        <div class="table-wrapper">
+            <table id="results">
+                <thead>
+                    <tr>
+                        <th>x</th>
+                        <th>y</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
